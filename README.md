@@ -7,6 +7,10 @@ It's a single place where I store all the configurations for my system, making i
 
 - git
 
+## WSL
+
+To make this work on wsl install the VcXsrv windows x Server on windows.
+
 ## Installation Guide
 
 To get started with my dotfiles on your machine, follow these steps:

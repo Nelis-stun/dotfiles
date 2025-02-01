@@ -6,7 +6,7 @@ echo "Setting up dotfiles"
 sudo apt update
 sudo apt upgrade
 
-sudo apt install -y curl kitty zsh i3 polybar git fonts-firacode cmake make build-essential gcc
+sudo apt install -y curl kitty zsh i3 polybar git fonts-firacode cmake make build-essential gcc zip neovim npm ripgrep g++
 
 # installing neovim
 curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
@@ -17,6 +17,11 @@ sudo mv nvim.appimage /usr/local/bin/nvim
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 curl -L https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh | sh
+
+if [ -f "$HOME/.zshrc" ]; then
+    echo "Removing existing .zshrc..."
+    rm "$HOME/.zshrc"
+fi
 
 sh ./symlinker.sh
 
