@@ -16,6 +16,8 @@ sudo mv nvim.appimage /usr/local/bin/nvim
 # installing rust
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
+curl -L https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh | sh
+
 sh ./symlinker.sh
 
 # Set Zsh as default shell
