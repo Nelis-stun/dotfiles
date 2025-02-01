@@ -6,10 +6,10 @@ echo "Setting up dotfiles"
 sudo apt update
 sudo apt upgrade
 
-sudo apt install -y curl kitty zsh i3 polybar git fonts-firacode cmake make build-essential gcc zip neovim npm ripgrep g++
+sudo apt install -y curl kitty zsh i3 polybar git fonts-firacode cmake make build-essential gcc zip neovim npm ripgrep g++ libfuse2
 
 # installing neovim
-curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
+curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.appimage
 sudo chmod +x nvim.appimage
 sudo mv nvim.appimage /usr/local/bin/nvim
 
