@@ -10,7 +10,7 @@ sudo apt install -y curl kitty zsh i3 polybar git fonts-firacode cmake make buil
 
 # installing neovim
 curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
-chmod u+x nvim.appimage
+sudo chmod +x nvim.appimage
 sudo mv nvim.appimage /usr/local/bin/nvim
 
 # installing rust
