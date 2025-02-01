@@ -9,8 +9,8 @@ sudo apt upgrade
 sudo apt install -y curl kitty zsh i3 polybar git fonts-firacode cmake make build-essential gcc zip neovim npm ripgrep g++ libfuse2 python3-venv python3-pip picom rofi
 
 # installing neovim
-curl -LO https://github.com/neovim/neovim/releases/download/0.10.4/nvim-linux-x86_64.appimage
-sudo chmod +x nvim-linux-x86_64.appimage
+curl -LO https://github.com/neovim/neovim/releases/download/v0.10.4/nvim-linux-x86_64.appimage
+sudo chmod u+x nvim-linux-x86_64.appimage
 sudo mv nvim-linux-x86_64.appimage /usr/local/bin/nvim
 
 # installing rust
