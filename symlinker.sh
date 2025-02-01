@@ -1,4 +1,6 @@
 # Create symlinks
+mkdir -p ~/.config/
+
 ln -s ~/.dotfiles/.config/nvim ~/.config/nvim
 ln -s ~/.dotfiles/.config/kitty ~/.config/kitty
 ln -s ~/.dotfiles/.config/i3 ~/.config/i3

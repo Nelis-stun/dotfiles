@@ -4,6 +4,7 @@ echo "Setting up dotfiles"
 
 # Install necessary packages
 sudo apt update
+sudo apt upgrade
 
 sudo apt install -y curl kitty zsh i3 polybar git fonts-firacode cmake make build-essential gcc
 

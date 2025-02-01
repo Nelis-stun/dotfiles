@@ -3,6 +3,10 @@
 Hello! My name is Niels, and these are my dotfiles. This repository contains the configurations I use daily to set up my development environment.
 It's a single place where I store all the configurations for my system, making it easier to replicate my setup across machines or share it with others.
 
+## Dependencies
+
+- git
+
 ## Installation Guide
 
 To get started with my dotfiles on your machine, follow these steps:
@@ -18,7 +22,7 @@ This is only tested on Ubuntu
 First, clone the repository to your home directory:
 
 ```sh
-git clone https://github.com/yourusername/dotfiles.git ~/.dotfiles
+git clone https://github.com/heavydemon21/dotfiles.git ~/.dotfiles
 ```
 
 ### 2. Navigate to the dotfiles directory
