@@ -3,6 +3,15 @@
 Hello! My name is Niels, and these are my dotfiles. This repository contains the configurations I use daily to set up my development environment.
 It's a single place where I store all the configurations for my system, making it easier to replicate my setup across machines or share it with others.
 
+## TODOs
+
+.clang-format
+.clang-tidy
+wallpaper
+rofi
+picom
+cpp on start up issue
+
 ## Dependencies
 
 - git

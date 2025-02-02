@@ -6,7 +6,9 @@ echo "Setting up dotfiles"
 sudo apt update
 sudo apt upgrade
 
-sudo apt install -y curl kitty zsh i3 polybar git fonts-firacode cmake make build-essential gcc zip neovim npm ripgrep g++ libfuse2 python3-venv python3-pip picom rofi
+sudo apt install -y curl kitty zsh i3 polybar git fonts-firacode cmake make build-essential \
+    gcc zip neovim npm ripgrep g++ libfuse2 python3-venv python3-pip picom rofi \
+    unzip gdb fontconfig
 
 # installing neovim
 curl -LO https://github.com/neovim/neovim/releases/download/v0.10.4/nvim-linux-x86_64.appimage
@@ -15,6 +17,16 @@ sudo mv nvim-linux-x86_64.appimage /usr/local/bin/nvim
 
 # installing rust
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
+#install nerd-fonts
+FONT_DIR="$HOME/.local/share/fonts"
+mkdir -p "$FONT_DIR"
+curl -LO https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/FiraCode.zip
+unzip -o FiraCode.zip -d "$FONT_DIR"
+rm FiraCode.zip
+
+# refresh font cache
+fc-cache -fv
 
 #install ohmyzsh
 curl -L https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh | sh
