@@ -35,7 +35,7 @@ This is only tested on Ubuntu
 First, clone the repository to your home directory:
 
 ```sh
-git clone https://github.com/heavydemon21/dotfiles.git ~/.dotfiles
+git clone https://github.com/Nelis-stun/dotfiles.git ~/.dotfiles
 ```
 
 ### 2. Navigate to the dotfiles directory

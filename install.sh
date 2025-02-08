@@ -7,7 +7,7 @@ sudo apt update
 sudo apt upgrade
 
 sudo apt install -y curl kitty zsh i3 polybar git fonts-firacode cmake make build-essential \
-    gcc zip neovim npm ripgrep g++ libfuse2 python3-venv python3-pip picom rofi \
+    gcc zip npm ripgrep g++ libfuse2 python3-venv python3-pip picom rofi \
     unzip gdb fontconfig
 
 # installing neovim
